@@ -1,0 +1,43 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "Playwright Javascript Framework Test Runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --browser=all",
+    "test-html-report": "playwright test --browser=all --reporter=html",
+    "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=results.json playwright test --browser=chromium --reporter=json",
+    "report": "npx playwright test --reporter=html && npx playwright show-report",
+    "debug": "npx playwright test --debug",
+    "github-action": "npx playwright test --config=github.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [
+    "playwright javascript framework"
+  ],
+  "author": "Vijay B",
+  "license": "N/A",
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.35",
+    "codegen": "^0.1.0",
+    "crypto-js": "^4.1.1",
+    "cucumber": "^6.0.7",
+    "dataframe-js": "^1.4.4",
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.3.0",
+    "json-server": "^0.17.4",
+    "mongodb": "^6.3.0",
+    "npm": "^9.6.7",
+    "pandas-js": "^0.2.4",
+    "selenium-server": "^3.141.59",
+    "selenium-webdriver": "^4.14.0",
+    "xlsx": "^0.18.5"
+  }
+}

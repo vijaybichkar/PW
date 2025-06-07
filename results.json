@@ -1,0 +1,218 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\playwright.config.js",
+    "rootDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\node_modules\\allure-playwright\\dist\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.setup.js"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "basic",
+        "name": "basic",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "rates_geo_data",
+        "name": "rates_geo_data",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "edge",
+        "name": "edge",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      },
+      {
+        "outputDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/vijaysinh.bichkar/playwrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 2400000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TC_001_Login.spec.js",
+      "file": "TC_001_Login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC_001_Login -  JIRA101",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 2400000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 17026,
+                  "error": {
+                    "message": "\u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"CPT Login Page\"\u001b[39m\nReceived string: \u001b[31m\"Sign in to your account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"CPT Login Page\"\u001b[39m\nReceived string: \u001b[31m\"Sign in to your account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\n    at C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js:12:19",
+                    "location": {
+                      "file": "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js",
+                      "column": 19,
+                      "line": 12
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseURL)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'CPT Login Page'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39mdo_login(\u001b[32m'vijaysinh.bichkar@concentrix.com'\u001b[39m\u001b[33m,\u001b[39mprocess\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPASSWORD\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'CPT - Home'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js",
+                        "column": 19,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"CPT Login Page\"\u001b[39m\nReceived string: \u001b[31m\"Sign in to your account\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\"\" dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Sign in to your account\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseURL)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'CPT Login Page'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39mdo_login(\u001b[32m'vijaysinh.bichkar@concentrix.com'\u001b[39m\u001b[33m,\u001b[39mprocess\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPASSWORD\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'CPT - Home'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js:12:19\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\pages\\LoginPage.js",
+                        "column": 62,
+                        "line": 15
+                      },
+                      "message": "Error: locator.click: Page closed\n=========================== logs ===========================\nwaiting for getByPlaceholder('User/Email')\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.js:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36masync\u001b[39m enterUsername(username){\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserNameInput)\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserNameInput)\u001b[33m.\u001b[39mfill(username)\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36masync\u001b[39m enterPassword(password){\u001b[0m\n\n\u001b[2m    at LoginPage.enterUsername (C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\pages\\LoginPage.js:15:62)\u001b[22m\n\u001b[2m    at LoginPage.do_login (C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\pages\\LoginPage.js:9:20)\u001b[22m\n\u001b[2m    at C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js:13:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-29T09:53:00.212Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\vijaysinh.bichkar\\playwrightAutomation\\tests\\TC_001_Login.spec.js",
+                    "column": 19,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "eb22ae781fea47370021-52ee002269b0691ec605",
+          "file": "TC_001_Login.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

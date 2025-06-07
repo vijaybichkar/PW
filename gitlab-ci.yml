@@ -1,0 +1,34 @@
+variables:
+  TEST_TYPE: "@regression"
+  BROWSER: chrome --headed
+  ENV: qa
+
+stages:
+  - pw_testAutomation_run #test suite automation run stage 
+
+tests:
+  stage: pw_testAutomation_run
+  image: mcr.microsoft.com/playwright:v1.29.1-focal #official playwright image from microsoft
+  parallel: #parallelism increse the values if required
+    matrix:
+      - PROJECT: ['chrome --headed']
+        SHARD_INDEX: [1]
+        SHARD_TOTAL: 1   
+  script:
+    - cd ./playwrightAutomation
+    - npm install mongodb
+    - npm install ci
+    - npm install -D @playwright/test
+    - npm ci
+    - npx playwright install chrome
+    # - npx playwright test --workers 1 --project=$PROJECT --shard=$SHARD_INDEX/$SHARD_TOTAL
+    - xvfb-run npx playwright test CreateNewDeal.spec.js cross-env ENV=$ENV --project $BROWSER --grep $TEST_TYPE
+  timeout: 2 hours 30 minutes #overriding the default gitlab runner timeout optional
+  artifacts:
+    paths: #assuming deafult playwright artifacts paths 
+      - ./playwrightAutomation/playwright-report/
+      - ./playwrightAutomation/Screenshot/
+    when: always
+    expire_in: 7 days  #artifacts will purged after 4 days of test run
+  # only:
+  #   - develop
